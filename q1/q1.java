@@ -9,23 +9,24 @@ class Pair {
     String name;
     String month;
     Pair(String name, String month) {
-            this.name = name;
-            this.month = month;
-        }
-        int getbulan(HashMap<String, Integer> monthMap) {
-            return 0;
-        }
+        this.name = name;
+        this.month = month;
     }
-
-    class Pair2 extends Pair {
-        Pair2(String name, String month){
-        super (name, month);}
-
-        @Override 
-        int getbulan(HashMap<String, Integer> monthMap) {
-            return monthMap.get(month.toLowerCase());
+    int getbulan(HashMap<String, Integer> monthMap) {
+        return 0;
     }
 }
+
+class Pair2 extends Pair {
+    Pair2(String name, String month){
+    super (name, month);}
+
+    @Override 
+    int getbulan(HashMap<String, Integer> monthMap) {
+        return monthMap.get(month.toLowerCase());
+    }
+}
+
     public class q1 {
     public static List<String> solve(String input) {
        HashMap<String, Integer> monthMap = new HashMap<>();
